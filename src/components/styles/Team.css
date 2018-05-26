@@ -1,0 +1,18 @@
+.team {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  animation: fadeIn .3s ease;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+}
+
+.team:hover {
+  border-bottom: 1px solid white;
+}

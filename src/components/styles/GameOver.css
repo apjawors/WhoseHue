@@ -1,0 +1,13 @@
+.go-container {
+  background: gray;
+  grid-column: 1 / 13;
+  grid-row: 1 / 13;
+}
+
+.gameover {
+  font-size: 40px;
+}
+
+.final-score {
+
+}
