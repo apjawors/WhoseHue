@@ -1,0 +1,78 @@
+.rules-container {
+  color: #FFF;
+  text-align: center;
+  background: #000;
+  opacity: .95;
+  grid-row: 1 / 13;
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 50% 20px auto;
+  animation: fadeIn .3s ease; 
+}
+
+.rules-header {
+  font-size: 40px;
+  align-self: center;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: .95}
+}
+
+.slick-slider.slick-initialized {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.slick-slide {
+  height: auto;  
+  cursor: grab;
+}
+
+.slick-slide > div:active {
+  cursor: grabbing
+}
+
+.slick-slide > div {
+  display: flex;
+  height: 50%;
+}
+
+.rule {
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 25px;
+  align-self: center;
+}
+
+.ruleNum {
+  font-family: Orbitron;
+}
+
+.rule > div > img {
+  transform: scale(.5);
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #FFF;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #41EAD4;
+}
+
+.close {
+  grid-row: 4 / 5;
+  font-size: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: .25s color ease;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #CA054D;
+}
