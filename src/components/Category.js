@@ -20,13 +20,10 @@ class Category extends React.Component {
     document.removeEventListener("animationend", this.load, false)
   }
   render(){
-    let cls = this.props.class,
-        click = this.props.click,
-        category  = this.props.category,
-        fade = this.state.animation ? " fadeInUp" : "",
-        rubberBand = !this.state.animation && cls === category ? " selected" : ""
+    let fade = this.state.animation ? " fadeInUp" : "",
+        rubberBand = !this.state.animation && this.props.class === this.props.category ? " selected" : ""
     return (
-      <div className={"league " + cls + fade + rubberBand} onClick={click}>{cls}</div>
+      <div className={"league " + this.props.class + fade + rubberBand} onClick={this.props.click}>{this.props.class}</div>
     )
   }
 }
